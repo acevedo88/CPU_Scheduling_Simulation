@@ -1,0 +1,318 @@
+second   0: 
+second   1: 
+second   2: JOB 2 arrives, timeRequired 4, priority 4
+	        (Assign to JOB 2: timeRemaining 3, priority 4)
+second   3: JOB 3 arrives, timeRequired 5, priority 5
+	        (Assign to JOB 3: timeRemaining 4, priority 5)
+second   4:     (Assign to JOB 3: timeRemaining 3, priority 5)
+second   5: JOB 5 arrives, timeRequired 4, priority 1
+	        (Assign to JOB 3: timeRemaining 2, priority 5)
+second   6: JOB 6 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 3: timeRemaining 1, priority 5)
+second   7: JOB 7 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 3: finish, priority 5)
+second   8: JOB 8 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 2: timeRemaining 2, priority 5)
+second   9:     (Assign to JOB 2: timeRemaining 1, priority 5)
+second  10: JOB 10 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 2: finish, priority 5)
+second  11:     (Assign to JOB 8: timeRemaining 4, priority 4)
+second  12: JOB 12 arrives, timeRequired 4, priority 1
+	        (Assign to JOB 8: timeRemaining 3, priority 4)
+second  13: JOB 13 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 8: timeRemaining 2, priority 4)
+second  14:     (Assign to JOB 8: timeRemaining 1, priority 4)
+second  15:     (Assign to JOB 8: finish, priority 4)
+second  16:     (Assign to JOB 6: timeRemaining 4, priority 4)
+second  17:     (Assign to JOB 6: timeRemaining 3, priority 4)
+second  18:     (Assign to JOB 13: timeRemaining 4, priority 5)
+second  19: JOB 19 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 13: timeRemaining 3, priority 5)
+second  20:     (Assign to JOB 13: timeRemaining 2, priority 5)
+second  21:     (Assign to JOB 13: timeRemaining 1, priority 5)
+second  22:     (Assign to JOB 13: finish, priority 5)
+second  23: JOB 23 arrives, timeRequired 5, priority 1
+	        (Assign to JOB 6: timeRemaining 2, priority 5)
+second  24:     (Assign to JOB 6: timeRemaining 1, priority 5)
+second  25: JOB 25 arrives, timeRequired 2, priority 3
+	        (Assign to JOB 5: timeRemaining 3, priority 5)
+second  26:     (Assign to JOB 5: timeRemaining 2, priority 5)
+second  27:     (Assign to JOB 5: timeRemaining 1, priority 5)
+second  28:     (Assign to JOB 5: finish, priority 5)
+second  29:     (Assign to JOB 6: finish, priority 5)
+second  30:     (Assign to JOB 7: timeRemaining 1, priority 5)
+second  31: JOB 31 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 7: finish, priority 5)
+second  32: JOB 32 arrives, timeRequired 5, priority 3
+	        (Assign to JOB 10: timeRemaining 1, priority 5)
+second  33: JOB 33 arrives, timeRequired 3, priority 4
+	        (Assign to JOB 10: finish, priority 5)
+second  34: JOB 34 arrives, timeRequired 4, priority 5
+	        (Assign to JOB 12: timeRemaining 3, priority 5)
+second  35: JOB 35 arrives, timeRequired 3, priority 1
+	        (Assign to JOB 12: timeRemaining 2, priority 5)
+second  36: JOB 36 arrives, timeRequired 3, priority 4
+	        (Assign to JOB 12: timeRemaining 1, priority 5)
+second  37:     (Assign to JOB 12: finish, priority 5)
+second  38:     (Assign to JOB 19: finish, priority 5)
+second  39: JOB 39 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 25: timeRemaining 1, priority 5)
+second  40:     (Assign to JOB 25: finish, priority 5)
+second  41: JOB 41 arrives, timeRequired 1, priority 4
+	        (Assign to JOB 31: timeRemaining 1, priority 5)
+second  42:     (Assign to JOB 31: finish, priority 5)
+second  43: JOB 43 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 23: timeRemaining 4, priority 5)
+second  44: JOB 44 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 23: timeRemaining 3, priority 5)
+second  45: JOB 45 arrives, timeRequired 5, priority 5
+	        (Assign to JOB 23: timeRemaining 2, priority 5)
+second  46:     (Assign to JOB 23: timeRemaining 1, priority 5)
+second  47:     (Assign to JOB 23: finish, priority 5)
+second  48:     (Assign to JOB 32: timeRemaining 4, priority 5)
+second  49: JOB 49 arrives, timeRequired 4, priority 5
+	        (Assign to JOB 32: timeRemaining 3, priority 5)
+second  50: JOB 50 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 32: timeRemaining 2, priority 5)
+second  51: JOB 51 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 32: timeRemaining 1, priority 5)
+second  52: JOB 52 arrives, timeRequired 3, priority 3
+	        (Assign to JOB 32: finish, priority 5)
+second  53:     (Assign to JOB 33: timeRemaining 2, priority 5)
+second  54:     (Assign to JOB 33: timeRemaining 1, priority 5)
+second  55:     (Assign to JOB 33: finish, priority 5)
+second  56: JOB 56 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 34: timeRemaining 3, priority 5)
+second  57: JOB 57 arrives, timeRequired 3, priority 4
+	        (Assign to JOB 34: timeRemaining 2, priority 5)
+second  58: JOB 58 arrives, timeRequired 3, priority 2
+	        (Assign to JOB 34: timeRemaining 1, priority 5)
+second  59:     (Assign to JOB 34: finish, priority 5)
+second  60: JOB 60 arrives, timeRequired 2, priority 2
+	        (Assign to JOB 35: timeRemaining 2, priority 5)
+second  61:     (Assign to JOB 35: timeRemaining 1, priority 5)
+second  62: JOB 62 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 35: finish, priority 5)
+second  63: JOB 63 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 36: timeRemaining 2, priority 5)
+second  64: JOB 64 arrives, timeRequired 4, priority 4
+	        (Assign to JOB 36: timeRemaining 1, priority 5)
+second  65:     (Assign to JOB 36: finish, priority 5)
+second  66: JOB 66 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 39: timeRemaining 1, priority 5)
+second  67: JOB 67 arrives, timeRequired 5, priority 3
+	        (Assign to JOB 39: finish, priority 5)
+second  68: JOB 68 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 41: finish, priority 5)
+second  69: JOB 69 arrives, timeRequired 3, priority 4
+	        (Assign to JOB 43: timeRemaining 4, priority 5)
+second  70:     (Assign to JOB 43: timeRemaining 3, priority 5)
+second  71:     (Assign to JOB 43: timeRemaining 2, priority 5)
+second  72:     (Assign to JOB 43: timeRemaining 1, priority 5)
+second  73: JOB 73 arrives, timeRequired 1, priority 2
+	        (Assign to JOB 43: finish, priority 5)
+second  74: JOB 74 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 44: finish, priority 5)
+second  75:     (Assign to JOB 45: timeRemaining 4, priority 5)
+second  76: JOB 76 arrives, timeRequired 5, priority 1
+	        (Assign to JOB 45: timeRemaining 3, priority 5)
+second  77:     (Assign to JOB 45: timeRemaining 2, priority 5)
+second  78:     (Assign to JOB 45: timeRemaining 1, priority 5)
+second  79: JOB 79 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 45: finish, priority 5)
+second  80: JOB 80 arrives, timeRequired 1, priority 2
+	        (Assign to JOB 49: timeRemaining 3, priority 5)
+second  81: JOB 81 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 49: timeRemaining 2, priority 5)
+second  82: JOB 82 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 49: timeRemaining 1, priority 5)
+second  83: JOB 83 arrives, timeRequired 1, priority 2
+	        (Assign to JOB 49: finish, priority 5)
+second  84: JOB 84 arrives, timeRequired 4, priority 1
+	        (Assign to JOB 50: finish, priority 5)
+second  85:     (Assign to JOB 51: timeRemaining 1, priority 5)
+second  86:     (Assign to JOB 51: finish, priority 5)
+second  87: JOB 87 arrives, timeRequired 4, priority 3
+	        (Assign to JOB 52: timeRemaining 2, priority 5)
+second  88: JOB 88 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 52: timeRemaining 1, priority 5)
+second  89:     (Assign to JOB 52: finish, priority 5)
+second  90: JOB 90 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 56: timeRemaining 4, priority 5)
+second  91: JOB 91 arrives, timeRequired 3, priority 1
+	        (Assign to JOB 56: timeRemaining 3, priority 5)
+second  92: JOB 92 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 56: timeRemaining 2, priority 5)
+second  93: JOB 93 arrives, timeRequired 4, priority 5
+	        (Assign to JOB 56: timeRemaining 1, priority 5)
+second  94: JOB 94 arrives, timeRequired 4, priority 5
+	        (Assign to JOB 56: finish, priority 5)
+second  95:     (Assign to JOB 57: timeRemaining 2, priority 5)
+second  96:     (Assign to JOB 57: timeRemaining 1, priority 5)
+second  97: JOB 97 arrives, timeRequired 3, priority 5
+	        (Assign to JOB 57: finish, priority 5)
+second  98:     (Assign to JOB 58: timeRemaining 2, priority 5)
+second  99: JOB 99 arrives, timeRequired 4, priority 4
+	        (Assign to JOB 58: timeRemaining 1, priority 5)
+second 100: JOB 100 arrives, timeRequired 4, priority 3
+	        (Assign to JOB 58: finish, priority 5)
+second 101:     (Assign to JOB 60: timeRemaining 1, priority 5)
+second 102:     (Assign to JOB 60: finish, priority 5)
+second 103: JOB 103 arrives, timeRequired 3, priority 3
+	        (Assign to JOB 62: finish, priority 5)
+second 104:     (Assign to JOB 63: finish, priority 5)
+second 105:     (Assign to JOB 64: timeRemaining 3, priority 5)
+second 106:     (Assign to JOB 64: timeRemaining 2, priority 5)
+second 107:     (Assign to JOB 64: timeRemaining 1, priority 5)
+second 108: JOB 108 arrives, timeRequired 1, priority 2
+	        (Assign to JOB 64: finish, priority 5)
+second 109: JOB 109 arrives, timeRequired 2, priority 2
+	        (Assign to JOB 66: timeRemaining 1, priority 5)
+second 110:     (Assign to JOB 66: finish, priority 5)
+second 111: JOB 111 arrives, timeRequired 3, priority 2
+	        (Assign to JOB 67: timeRemaining 4, priority 5)
+second 112: JOB 112 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 67: timeRemaining 3, priority 5)
+second 113: JOB 113 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 67: timeRemaining 2, priority 5)
+second 114:     (Assign to JOB 67: timeRemaining 1, priority 5)
+second 115:     (Assign to JOB 67: finish, priority 5)
+second 116: JOB 116 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 68: timeRemaining 3, priority 5)
+second 117: JOB 117 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 68: timeRemaining 2, priority 5)
+second 118:     (Assign to JOB 68: timeRemaining 1, priority 5)
+second 119: JOB 119 arrives, timeRequired 3, priority 5
+	        (Assign to JOB 68: finish, priority 5)
+second 120: JOB 120 arrives, timeRequired 2, priority 3
+	        (Assign to JOB 69: timeRemaining 2, priority 5)
+second 121: JOB 121 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 69: timeRemaining 1, priority 5)
+second 122:     (Assign to JOB 69: finish, priority 5)
+second 123: JOB 123 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 73: finish, priority 5)
+second 124: JOB 124 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 74: timeRemaining 1, priority 5)
+second 125: JOB 125 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 74: finish, priority 5)
+second 126:     (Assign to JOB 76: timeRemaining 4, priority 5)
+second 127: JOB 127 arrives, timeRequired 4, priority 3
+	        (Assign to JOB 76: timeRemaining 3, priority 5)
+second 128:     (Assign to JOB 76: timeRemaining 2, priority 5)
+second 129:     (Assign to JOB 76: timeRemaining 1, priority 5)
+second 130:     (Assign to JOB 76: finish, priority 5)
+second 131: JOB 131 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 79: finish, priority 5)
+second 132: JOB 132 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 80: finish, priority 5)
+second 133: JOB 133 arrives, timeRequired 3, priority 1
+	        (Assign to JOB 81: finish, priority 5)
+second 134:     (Assign to JOB 82: timeRemaining 4, priority 5)
+second 135: JOB 135 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 82: timeRemaining 3, priority 5)
+second 136: JOB 136 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 82: timeRemaining 2, priority 5)
+second 137: JOB 137 arrives, timeRequired 4, priority 5
+	        (Assign to JOB 82: timeRemaining 1, priority 5)
+second 138: JOB 138 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 82: finish, priority 5)
+second 139: JOB 139 arrives, timeRequired 1, priority 5
+	        (Assign to JOB 83: finish, priority 5)
+second 140:     (Assign to JOB 84: timeRemaining 3, priority 5)
+second 141: JOB 141 arrives, timeRequired 4, priority 4
+	        (Assign to JOB 84: timeRemaining 2, priority 5)
+second 142: JOB 142 arrives, timeRequired 5, priority 1
+	        (Assign to JOB 84: timeRemaining 1, priority 5)
+second 143: JOB 143 arrives, timeRequired 2, priority 3
+	        (Assign to JOB 84: finish, priority 5)
+second 144: JOB 144 arrives, timeRequired 5, priority 1
+	        (Assign to JOB 87: timeRemaining 3, priority 5)
+second 145: JOB 145 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 87: timeRemaining 2, priority 5)
+second 146: JOB 146 arrives, timeRequired 3, priority 1
+	        (Assign to JOB 87: timeRemaining 1, priority 5)
+second 147: JOB 147 arrives, timeRequired 2, priority 4
+	        (Assign to JOB 87: finish, priority 5)
+second 148:     (Assign to JOB 88: timeRemaining 4, priority 5)
+second 149:     (Assign to JOB 88: timeRemaining 3, priority 5)
+second 150:     (Assign to JOB 88: timeRemaining 2, priority 5)
+second 151:     (Assign to JOB 88: timeRemaining 1, priority 5)
+second 152: JOB 152 arrives, timeRequired 1, priority 4
+	        (Assign to JOB 88: finish, priority 5)
+second 153:     (Assign to JOB 90: timeRemaining 4, priority 5)
+second 154:     (Assign to JOB 90: timeRemaining 3, priority 5)
+second 155: JOB 155 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 90: timeRemaining 2, priority 5)
+second 156: JOB 156 arrives, timeRequired 1, priority 1
+	        (Assign to JOB 90: timeRemaining 1, priority 5)
+second 157: JOB 157 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 90: finish, priority 5)
+second 158: JOB 158 arrives, timeRequired 4, priority 3
+	        (Assign to JOB 91: timeRemaining 2, priority 5)
+second 159: JOB 159 arrives, timeRequired 5, priority 4
+	        (Assign to JOB 91: timeRemaining 1, priority 5)
+second 160: JOB 160 arrives, timeRequired 1, priority 1
+	        (Assign to JOB 91: finish, priority 5)
+second 161:     (Assign to JOB 92: timeRemaining 1, priority 5)
+second 162:     (Assign to JOB 92: finish, priority 5)
+second 163: JOB 163 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 93: timeRemaining 3, priority 5)
+second 164:     (Assign to JOB 93: timeRemaining 2, priority 5)
+second 165: JOB 165 arrives, timeRequired 1, priority 1
+	        (Assign to JOB 93: timeRemaining 1, priority 5)
+second 166:     (Assign to JOB 93: finish, priority 5)
+second 167: JOB 167 arrives, timeRequired 4, priority 4
+	        (Assign to JOB 94: timeRemaining 3, priority 5)
+second 168:     (Assign to JOB 94: timeRemaining 2, priority 5)
+second 169: JOB 169 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 94: timeRemaining 1, priority 5)
+second 170: JOB 170 arrives, timeRequired 1, priority 2
+	        (Assign to JOB 94: finish, priority 5)
+second 171: JOB 171 arrives, timeRequired 3, priority 1
+	        (Assign to JOB 97: timeRemaining 2, priority 5)
+second 172:     (Assign to JOB 97: timeRemaining 1, priority 5)
+second 173:     (Assign to JOB 97: finish, priority 5)
+second 174:     (Assign to JOB 99: timeRemaining 3, priority 5)
+second 175: JOB 175 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 99: timeRemaining 2, priority 5)
+second 176: JOB 176 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 99: timeRemaining 1, priority 5)
+second 177: JOB 177 arrives, timeRequired 4, priority 2
+	        (Assign to JOB 99: finish, priority 5)
+second 178: JOB 178 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 100: timeRemaining 3, priority 5)
+second 179: JOB 179 arrives, timeRequired 4, priority 3
+	        (Assign to JOB 100: timeRemaining 2, priority 5)
+second 180:     (Assign to JOB 100: timeRemaining 1, priority 5)
+second 181:     (Assign to JOB 100: finish, priority 5)
+second 182:     (Assign to JOB 103: timeRemaining 2, priority 5)
+second 183:     (Assign to JOB 103: timeRemaining 1, priority 5)
+second 184: JOB 184 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 103: finish, priority 5)
+second 185:     (Assign to JOB 108: finish, priority 5)
+second 186: JOB 186 arrives, timeRequired 1, priority 4
+	        (Assign to JOB 109: timeRemaining 1, priority 5)
+second 187: JOB 187 arrives, timeRequired 1, priority 3
+	        (Assign to JOB 109: finish, priority 5)
+second 188: JOB 188 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 111: timeRemaining 2, priority 5)
+second 189:     (Assign to JOB 111: timeRemaining 1, priority 5)
+second 190:     (Assign to JOB 111: finish, priority 5)
+second 191:     (Assign to JOB 112: timeRemaining 3, priority 5)
+second 192: JOB 192 arrives, timeRequired 1, priority 4
+	        (Assign to JOB 112: timeRemaining 2, priority 5)
+second 193:     (Assign to JOB 112: timeRemaining 1, priority 5)
+second 194: JOB 194 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 112: finish, priority 5)
+second 195: JOB 195 arrives, timeRequired 5, priority 2
+	        (Assign to JOB 113: timeRemaining 4, priority 5)
+second 196: JOB 196 arrives, timeRequired 2, priority 5
+	        (Assign to JOB 113: timeRemaining 3, priority 5)
+second 197:     (Assign to JOB 113: timeRemaining 2, priority 5)
+second 198: JOB 198 arrives, timeRequired 2, priority 1
+	        (Assign to JOB 113: timeRemaining 1, priority 5)
+second 199:     (Assign to JOB 113: finish, priority 5)
+--- Simulation completed ---
+Simulation time: 200 unit time.
+Number of processes: 63
+Average Turn around time for a process: 45.285714285714285
