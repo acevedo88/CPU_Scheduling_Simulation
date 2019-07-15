@@ -10,12 +10,12 @@ public class Process implements Comparable<Process> {
 	
 	//Private variables used globally
 	private int priorityLevel;
-	private double timeRemaining; 
-	private double arrivalTime;
-	private double timeNotProcessed;
+	private int timeRemaining; 
+	private int arrivalTime;
+	private int timeNotProcessed;
 	
 	//Instantiates the variables
-	public Process(int priorityLevel, double timeRemaining, double arrivalTime) {
+	public Process(int priorityLevel, int timeRemaining, int arrivalTime) {
 		this.priorityLevel = priorityLevel;
 		this.timeRemaining = timeRemaining;
 		this.arrivalTime = arrivalTime;
@@ -55,7 +55,7 @@ public class Process implements Comparable<Process> {
 	}
 	
 	//Sets the time remaining for the process
-	public void setTimeRemaining(double timeToFinish) {
+	public void setTimeRemaining(int timeToFinish) {
 		this.timeRemaining = timeToFinish;
 	}
 
@@ -65,7 +65,7 @@ public class Process implements Comparable<Process> {
 	}
 	
 	//Sets the arrival time for the process
-	public void setArrivalTime(double arrivalTime) {
+	public void setArrivalTime(int arrivalTime) {
 		this.arrivalTime = arrivalTime;
 	}
 
