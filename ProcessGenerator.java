@@ -1,38 +1,40 @@
 import java.util.Random;
 
 public class ProcessGenerator {
-
-	private Random rand = new Random();
-
+	
 	private double probability;
+	Random rand;
 
 	public ProcessGenerator(double probability) {
-
 		this.probability = probability;
-
+		rand = new Random();
 	}
-
-	public Process getNewProcess(int arrivalTime, int processTime, int priorityLevel) {
-
-		int pLevel = rand.nextInt(priorityLevel) + 1;
-		int timeProcess = rand.nextInt(processTime) + 1;
-		Process process = new Process(arrivalTime, timeProcess, pLevel);
-		return process;
-
-	}
+	
+	
 
 	public boolean query() {
-
-		if (probability <= rand.nextDouble()) {
-			
+		
+		boolean retVal = false;
+		double randomize = rand.nextDouble();
+		
+		if(randomize <= probability) {
 			return true;
-			
-		} 
-		else {
-			
-			return false;
-			
 		}
+		
+		return retVal;
+	}
+	
+	
+	public Process getNewProcess(int currentTime, int maxProcessTime, int maxLevel) {
+		rand = new Random();
+		
+		int priorityLevel = rand.nextInt(maxLevel) + 1;
+		int timeRemaining = rand.nextInt(maxProcessTime) + 1;
+		
+		Process newProcess = new Process(priorityLevel, timeRemaining, currentTime);
+		newProcess.resetTimeNotProcessed();
+		
+		return newProcess;
 	}
 
 }
