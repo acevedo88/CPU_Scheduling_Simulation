@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class ProcessGenerator {
 
-	private Random rand;
+	private Random rand = new Random();
 
 	private double probability;
 
@@ -10,28 +10,29 @@ public class ProcessGenerator {
 
 		this.probability = probability;
 
-		rand = new Random();
-
-	}
-
-	public ProcessGenerator(double probability, long seed) {
-
-		this.probability = probability;
-
-		rand = new Random(seed);
-
 	}
 
 	public Process getNewProcess(int arrivalTime, int processTime, int priorityLevel) {
 
-		return new Process(arrivalTime, rand.nextInt(processTime) + 1, rand.nextInt(priorityLevel) + 1);
+		int pLevel = rand.nextInt(priorityLevel) + 1;
+		int timeProcess = rand.nextInt(processTime) + 1;
+		Process process = new Process(arrivalTime, timeProcess, pLevel);
+		return process;
 
 	}
 
 	public boolean query() {
 
-		return rand.nextDouble() <= probability;
-
+		if (probability <= rand.nextDouble()) {
+			
+			return true;
+			
+		} 
+		else {
+			
+			return false;
+			
+		}
 	}
 
 }

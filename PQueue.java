@@ -1,70 +1,44 @@
+import java.util.ArrayList;
+
+/*
+ * defines a priority queue using a max-heap
+ */
 public class PQueue {
 
-	private boolean isEmpty = true;
-	MaxHeap qHeap = new MaxHeap();
+	private MaxHeap heaps = null;
 
 	public PQueue() {
+		heaps = new MaxHeap();
 
 	}
 
 	public void enPQueue(Process p) {
-		if (p.getTimeRemaining() != 0) {
-			isEmpty = false;
-			qHeap.add(p);
-		}
-	}
-
-	public boolean isEmpty() {
-
-		return isEmpty;
+		heaps.rebuild(p);
 	}
 
 	public Process dePQueue() {
-		Process root = qHeap.getMax(); 
-		qHeap.removeMax(); 
-
-		if (qHeap.isEmpty()) {
-			isEmpty = true;
-		} else {
-
-			qHeap.MaxHeapifyUp(qHeap.getSize() - 1); 
-
-		}
-		return root;
-
+		return heaps.extractMax();
 	}
-	
 
-	   public void clearQueue(){
-	       qHeap.clearHeap();
-	   }
+	public void update(int timeToIncrementPriority, int maxLevel) {
 
-
-	public void update(int timeToIncrementLevel, int maxLevel) {
-
-		for (int i = 1; i < qHeap.getSize(); i++) { 
-
-			Process p = qHeap.getIndex(i); 
-			p.incrementTimeNotProcessed();
-
-			if (p.getTimeNotProcessed() >= timeToIncrementLevel) {
-
-				if (p.getPriority() < maxLevel) {
-					p.incrementPriority();
-					qHeap.MaxHeapifyUp(i); 
+		for (int i = 1; i < heaps.getSize(); i++) {
+			Process p = heaps.getProcess(i);
+//			p.incrementTimeNotProcessed();
+			if (p.getTimeNotProcessed() > timeToIncrementPriority) {
+//				p.incPriority();
+				if (p.getPriority() > maxLevel) {
+//					p.setPriority(maxLevel);
+					p.resetTimeNotProcessed();
 				}
-
-				p.resetTimeNotProcessed();
-
 			}
+//			heaps.buildMaxHeap();
 		}
-
 	}
 
-	public String toString() {
 
-		return qHeap.toString();
 
+	public boolean isEmpty() {
+		return heaps.getSize() == 0;
 	}
-
 }

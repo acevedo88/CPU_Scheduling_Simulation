@@ -1,89 +1,82 @@
 import java.util.ArrayList;
 
-public class MaxHeap {
 
-	private ArrayList<Process> heap;
-	private int size;
+public class MaxHeap extends ArrayList{
 
-	public MaxHeap() {
-		heap = new ArrayList<Process>();
-	}
+		private ArrayList<Process> heap;
+		private Process left, parent, child;
+		private int i;
 
-	public void MaxHeapifyUp(int input) {
+		public MaxHeap(){
+				heap = new ArrayList<Process>();
+		}
 
-		if (input > 0 && input < heap.size()) {
+		public int getSize(){
+				return heap.size();
+		}
 
-			Process curr = heap.get(input);
-			Process prev = heap.get(input - 1);
-
-			if (curr.compareTo(prev) == 1) {
-				int prevNewIndex = heap.indexOf(curr);
-				heap.set(heap.indexOf(prev), curr);
-				heap.set(prevNewIndex, prev);
-				MaxHeapifyUp(heap.indexOf(curr));
-			} else if (curr.compareTo(prev) == 0) {
-				if (curr.getArrivalTime() < prev.getArrivalTime()) {
-					int prevNewIndex = heap.indexOf(curr);
-					heap.set(heap.indexOf(prev), curr);
-					heap.set(prevNewIndex, prev);
-					MaxHeapifyUp(heap.indexOf(curr));
+		public void buildMaxHeap(){
+				for (int i = (getSize()-1)/2; i > 0; i--){
+					heapDown(i);
 				}
-			}
+		}
+		public void rebuild(Process p){
+			heap.add(p);
+			buildMaxHeap();
+		}
+
+//		public void heapUp(Process process){
+//				heap.add(process);
+//				while(process.compareTo(heap.get(parentIndex(process)))== 1){
+//						swap(heap.indexOf(process),parentIndex(process));	
+//				}
+//		}
+		
+		public Process extractMax(){
+				int last = heap.size()-1;
+				Process max = heap.get(0);
+				swap (0,last);
+//				heap.remove(last);
+				return max;
 
 		}
 
-	}
-
-	public int getSize() {
-		return size;
-	}
-
-	public void add(Process p) {
-		heap.add(p);
-		MaxHeapifyUp(heap.indexOf(p));
-
-	}
-
-	public void remove(Process p) {
-		heap.remove(p);
-		if (heap.size() > 1) {
-			MaxHeapifyUp(heap.size() - 1);
+		public void heapDown(int i){
+				//swap first and last
+				// heap down time
+				Process first = heap.get(i);
+				int left = (2 * i)+1;
+				int right = (2 * i)+2;
+				int bigKid = i;
+				if(left < getSize() && heap.get(left).compareTo(heap.get(bigKid)) ==1){
+					bigKid = left;
+				}
+			
+				if(right < getSize() && heap.get(right).compareTo(heap.get(bigKid)) ==1){
+					bigKid = right;
+				}
+				if(bigKid != i){
+					swap(i,bigKid);
+					heapDown(bigKid);
+				}
 		}
 
-	}
 
-	public Process getMax() {
-		if (heap.size() > 0) {
-			return heap.get(0);
-		} else {
-			return null;
+		public void remove(){
+				heap.remove(heap.indexOf(heap.size()-1));
 		}
 
-	}
-
-	public void removeMax() {
-		this.remove(getMax());
-		if (heap.size() > 1) {
-			MaxHeapifyUp(heap.size() - 1);
+		public void swap(int one, int two){
+				Process temp = heap.get(one);
+				heap.set(one, heap.get(two));
+				heap.set(two, temp);
 		}
 
-	}
+		public boolean isEmpty(){
+				return heap.isEmpty();
+}
 
-	public void clearHeap() {
-		heap.clear();
-		heap.add(null);
-	}
-
-	public Process getIndex(int index) {
-		return heap.get(index);
-	}
-
-	public boolean isEmpty() {
-		if (heap.size() < 1) {
-			return true;
-		} else {
-			return false;
+		public Process getProcess(int index){
+				return heap.get(index);
 		}
-	}
-
 }

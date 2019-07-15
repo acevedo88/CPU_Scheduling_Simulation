@@ -1,80 +1,81 @@
 import java.util.Random;
 
-public class Process {
+/*
+ * defines a process. You need to implement the compareTo method in this class.
+Each process has a priority level, time remaining to finish, and arrival time.
+ */
 
-	Random rand = new Random();
-	private int timeLeft;
-	private int priority;
-	private int startingTime;
-	private int timeNotProcessed;
 
-	public Process(int startingTime, int timeLeft, int priority) {
-
-		this.timeNotProcessed = 0;
-		this.startingTime = startingTime;
-		this.priority = rand.nextInt(priority) + 1;
-		this.timeLeft = rand.nextInt(timeLeft) + 1;
-
+public class Process implements Comparable <Process>{
+	private int timeLeft, timeNotProcessed;
+	private int priority, processTime, arrivalTime;
+	private Random rand = new Random();
+	
+	public Process (int currentTime, int maxProcessTime, int maxLevel){
+		this.priority = rand.nextInt(maxLevel);
+		this.processTime = rand.nextInt(maxProcessTime);
+		this.arrivalTime = currentTime;
+		timeNotProcessed = 0;
+	}
+	
+	public int getTimeRemaining() {
+		return timeLeft;
 	}
 
-	public int compareTo(Process p) {                              
-		if (this.priority < p.priority) {
-			return -1;
-		} else if (this.priority > p.priority) {
-			return 1;
-		} else{
-			if (this.getArrivalTime() <= p.getArrivalTime()) { 
-				return 1;
-			} else{
-				return -1; 
-			}
+	public void reduceTimeRemaining() {
+		this.timeLeft--;
+	}
+
+	public boolean finish() {
+		if(timeLeft == 0){
+			return true;
 		}
+		else{
+			return false;
+		}
+	}
+
+	public int getArrivalTime() {
+		return arrivalTime;
+	}
+
+	public void resetTimeNotProcessed() {
+		timeNotProcessed = 0;
+	}
+	public int getTimeNotProcessed(){
+		return timeNotProcessed;
+	}
+	
+	public void incrementTimeNotProcessed(){
+		timeNotProcessed++;
 	}
 
 	public int getPriority() {
 		return priority;
 	}
-
-	public int getTimeRemaining() { 
-		return this.timeLeft;
+	public void incPriority(){
+		priority++;
 	}
 
-	public void reduceTimeRemaining() {
-		timeLeft--;
-	}
-
-	public int getTimeNotProcessed() {
-		return timeNotProcessed;
-	}
-	
-	public boolean finish() { 
-		if (this.timeLeft == 0) {
-			
-			return true;
-		} else {
-			return false;
+	@Override
+	public int compareTo(Process p) {
+		if(p.getPriority() < priority){
+			return -1;
+		}
+		if(p.getPriority() > priority){
+			return 1;
+		}
+		else{
+			return 0;
 		}
 	}
 
-	public int getArrivalTime() { 
-		return this.startingTime;
-	}
-	
-	public void incrementTimeNotProcessed() {
-		timeNotProcessed++;
+	public void addWaitTime() {
+		timeLeft++;
 	}
 
-	public void resetTimeNotProcessed() { 
-		timeNotProcessed = 0;
-
+	public void setPriority(int i) {
+		this.priority = i;
 	}
-
-	public void incrementPriority() {
-		priority++;
-		resetTimeNotProcessed();
-	}
-	
-	
-
 
 }
