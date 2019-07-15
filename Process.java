@@ -60,7 +60,7 @@ public class Process implements Comparable<Process> {
 	}
 
 	//gets the time remaining for the process
-	public double getTimeRemaining() {
+	public int getTimeRemaining() {
 		return timeRemaining;
 	}
 	
@@ -70,7 +70,7 @@ public class Process implements Comparable<Process> {
 	}
 
 	//gets the arrival time for the process
-	public double getArrivalTime() {
+	public int getArrivalTime() {
 		return arrivalTime;
 	}
 	
@@ -95,7 +95,7 @@ public class Process implements Comparable<Process> {
 	}
 	
 	//Gets the time for the process
-	public double getTimeNotProcessed() {
+	public int getTimeNotProcessed() {
 		return timeNotProcessed;
 	}
 
